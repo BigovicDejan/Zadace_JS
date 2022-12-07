@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zadaća_JS_01</title>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+        <h1>Zadaća 01 - JavaScript</h1>
+
+        <form>
+            <label for="textarea">Unesi nekoliko rečenica:</label>
+            <br />
+            <textarea
+                id="textarea"
+                name="textarea"
+                rows="8"
+                cols="100"
+                autofocus
+            ></textarea>
+            <br />
+            <br />
+            <input
+                id="button"
+                type="submit"
+                value="Razbij"
+                onclick="razbij(event)"
+            />
+        </form>
+
+        <p id="detalji"></p>
+    </body>
+</html>
