@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zadaća_02_JS</title>
+        <script defer src="./zadaca_02.js"></script>
+        <link rel="stylesheet" href="./zadaca_02.css" />
+    </head>
+    <body>
+        <form action="">
+            <fieldset>
+                <legend>Podatci o prvom vozilu</legend>
+                <label for="nadimak01">Nadimak: </label>
+                <input
+                    type="text"
+                    id="nadimak01"
+                    name="nadimak01"
+                /><br /><br />
+                <label for="boja01">Boja: </label>
+                <input type="color" id="boja01" name="boja01" /><br /><br />
+                <label for="brzina01">Brzina: </label>
+                <input type="number" id="brzina01" /><br /><br />
+            </fieldset>
+            <fieldset>
+                <legend>Podatci o drugom vozilu</legend>
+                <label for="nadimak02">Nadimak: </label>
+                <input
+                    type="text"
+                    id="nadimak02"
+                    name="nadimak02"
+                /><br /><br />
+                <label for="boja02">Boja: </label>
+                <input type="color" id="boja02" name="boja02" /><br /><br />
+                <label for="brzina02">Brzina: </label>
+                <input type="number" id="brzina02" /><br /><br />
+            </fieldset>
+            <fieldset>
+                <legend>Duljina utrke</legend>
+
+                <label for="utrka">Duljina utrke: </label> <br />
+                <input
+                    type="radio"
+                    id="duljina01"
+                    name="utrka"
+                    value="50"
+                /><label for="duljina01">50 km</label><br />
+                <input
+                    type="radio"
+                    id="duljina02"
+                    name="utrka"
+                    value="100"
+                /><label for="duljina02">100 km</label><br /><br />
+
+                <input
+                    type="submit"
+                    onclick="definirajVozila(event); promijeniBoju();
+                    delayRun();
+                    race();"
+                />
+            </fieldset>
+        </form>
+        <div id="rezultat"></div>
+        <br />
+        <div class="first" id="first"></div>
+        <br />
+        <div class="second" id="second"></div>
+    </body>
+</html>
