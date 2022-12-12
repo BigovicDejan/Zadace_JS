@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+.naslov {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.unos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.forma{
+  padding: 30px;
+  margin: 30px;
+}
 
 .first {
   animation-name: animacija1; 
@@ -14,7 +34,7 @@
 
 @keyframes animacija1 {
   
-  100% {translate: 1000px;}
+  100% {translate: 500px;}
 }
 .second {
   animation-name: animacija2; 
@@ -24,7 +44,7 @@
 }
 
 @keyframes animacija2 {
-  100% {translate: 1000px;}
+  100% {translate: 500px;}
 }
 
 main {
@@ -39,7 +59,7 @@ main {
   overflow: hidden;
 }
 
-div.first, .second{
+.first, .second{
   width: 10%;
   height: 100%;
   border: 2px solid black;
@@ -48,7 +68,8 @@ div.first, .second{
   flex-basis: 25%;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 25px;
   animation-play-state: paused;
+  visibility: hidden;
 }
 
