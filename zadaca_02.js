@@ -39,9 +39,9 @@ function definirajVozila(event){
 
   stvoriVozilo();
 
-  if(vozilo01.brzina < vozilo02.brzina){
+  if(vozilo01.brzina > vozilo02.brzina){
     rezultat.innerHTML = `<p>Vozilo s nadimkom ${vozilo01.ime} je brže</p>`;
-  } else if(vozilo01.brzina > vozilo02.brzina){
+  } else if(vozilo01.brzina < vozilo02.brzina){
     rezultat.innerHTML = `<p>Vozilo s nadimkom ${vozilo02.ime} je brže</p>`;
   } else{
     rezultat.innerHTML = `<p>Vozila su podjednako brza!</p>`;
